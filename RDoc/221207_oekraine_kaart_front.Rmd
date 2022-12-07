@@ -1,0 +1,25 @@
+---
+title: "oekraine_kaart_front"
+author: "Robbe Van Molle"
+date: "2022-12-07"
+output: html_document
+---
+
+```{r}
+library(sf)
+library(terra)
+library(dplyr)
+library(spData)
+library(spDataLarge)
+```
+
+```{r}
+library(tmap)    # for static and interactive maps
+library(leaflet) # for interactive maps
+library(ggplot2) # tidyverse data visualization package
+```
+
+```{r}
+nz_elev = rast(system.file("raster/nz_elev.tif", package = "spDataLarge"))
+```
+
